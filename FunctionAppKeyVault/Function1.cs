@@ -33,8 +33,9 @@ namespace FunctionAppKeyVault
                 : $"Hello, {name}. This HTTP triggered function executed successfully.";
 
             responseMessage = "TESTE: kv_SecUser01: " + kv_SecUser01 + " kv_SecPass01: " + kv_SecPass01;
+            var password = " abcd1234";
 
-            return new OkObjectResult(responseMessage);
+            return new OkObjectResult(responseMessage + password);
         }
     }
 }

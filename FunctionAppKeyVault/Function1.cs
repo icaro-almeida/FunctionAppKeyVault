@@ -35,6 +35,9 @@ namespace FunctionAppKeyVault
             responseMessage = "TESTE: kv_SecUser01: " + kv_SecUser01 + " kv_SecPass01: " + kv_SecPass01;
             var password = " abcd1234";
 
+            var aleatorio = new Random();
+            var numero = aleatorio.Next();
+
             return new OkObjectResult(responseMessage + password);
         }
     }

@@ -32,7 +32,7 @@ namespace FunctionAppKeyVault
                 ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
                 : $"Hello, {name}. This HTTP triggered function executed successfully.";
 
-            responseMessage = "kv_SecUser01: " + kv_SecUser01 + "kv_SecPass01: " + kv_SecPass01;
+            responseMessage = "TESTE: kv_SecUser01: " + kv_SecUser01 + " kv_SecPass01: " + kv_SecPass01;
 
             return new OkObjectResult(responseMessage);
         }
